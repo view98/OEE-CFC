@@ -81,9 +81,9 @@ Please cite our paper if you use OEE-CFC in your work:
       Yang, Jie and
       Xiong Zhenwei",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
-    month = may,
+    month = November,
     year = "2024",
-    address = "Dublin, Ireland",
+    address = "Miami, Florida",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2022.acl-long.466",
     doi = "10.18653/v1/2022.acl-long.466",
