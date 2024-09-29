@@ -1,9 +1,6 @@
-#OEE-CFC
+# OEE-CFC
 This is the OEE-CFC corpus of the paper [OEE-CFC: A Dataset for Open Event Extraction from Chinese Financial Commentary] 
-The experimental code is using PAIE.
-
-# PAIE (**P**rompting **A**rgument **I**nteraction for Event Argument **E**xtraction)
-This is the implementation of the paper [Prompt for Extraction? PAIE: Prompting Argument Interaction for
+The experimental code is using the PAIE of the paper [Prompt for Extraction? PAIE: Prompting Argument Interaction for
 Event Argument Extraction](https://aclanthology.org/2022.acl-long.466/#:~:text=On%20the%20one%20hand%2C%20PAIE,input%20texts%20for%20each%20role.). ACL'2022.
 
 
