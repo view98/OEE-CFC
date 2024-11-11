@@ -68,25 +68,26 @@ Event Argument Extraction](https://aclanthology.org/2022.acl-long.466/#:~:text=O
 ## Citation
 Please cite our paper if you use OEE-CFC in your work:
 ```bibtex
-@inproceedings{wan2024oee-cfc,
-    title = "{OEE-CFC}：A dataset for open event extraction from {Chinese} financial commentary",
+@inproceedings{wan-etal-2024-oee,
+    title = "{OEE}-{CFC}: A Dataset for Open Event Extraction from {C}hinese Financial Commentary",
     author = "Wan, Qizhi  and
-      Wa, Changxuan  and
+      Wan, Changxuan  and
       Hu, Rong  and
       Liu, Dexi  and
-      Xu, Wenwu  and
+      Wenwu, Xu  and
       Xu, Kang  and
-      Zou, Meihua and
-      Liu, Tao and
-      Yang, Jie and
-      Xiong Zhenwei",
+      Meihua, Zou  and
+      Tao, Liu  and
+      Yang, Jie  and
+      Xiong, Zhenwei",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
-    month = November,
+    month = nov,
     year = "2024",
-    address = "Miami, Florida",
+    address = "Miami, Florida, USA",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.acl-long.466",
-    doi = "10.18653/v1/2022.acl-long.466",
-    pages = "6759--6774",
-}
+    url = "https://aclanthology.org/2024.findings-emnlp.256",
+    pages = "4446--4459",
 ```
