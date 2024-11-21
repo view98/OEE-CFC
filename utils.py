@@ -19,14 +19,14 @@ def set_seed(args):
     torch.manual_seed(args.seed)
 
 
-def count_time(f):
-    def run(**kw):
-        time1 = time.time()
-        result = f(**kw)
-        time2 = time.time()
-        logger.info("The time of executing {}: {}".format(f.__name__, time2-time1))
-        return result
-    return run
+# def count_time(f):
+#     def run(**kw):
+#         time1 = time.time()
+#         result = f(**kw)
+#         time2 = time.time()
+#         logger.info("The time of executing {}: {}".format(f.__name__, time2-time1))
+#         return result
+#     return run
 
 
 def hungarian_matcher(predicted_spans, target_spans):
@@ -184,19 +184,6 @@ def filter_spans(candidate_span_list, max_span_num):
             candidate_span_list = [candidate_span for candidate_span in candidate_span_list if not is_intersect(candidate_span, selected_span)]
     return answer_span_list
 
-
-def check_tensor(tensor, var_name):
-    print("******Check*****")
-    print("tensor_name: {}".format(var_name))
-    print("shape: {}".format(tensor.size()))
-    if len(tensor.size())==1 or tensor.size(0)<=3:
-        print("value: {}".format(tensor))
-    else:
-        print("part value: {}".format(tensor[0,:]))
-    print("require_grads: {}".format(tensor.requires_grad))
-    print("tensor_type: {}".format(tensor.dtype))
-
-
 from spacy.tokens import Doc
 class WhitespaceTokenizer:
     def __init__(self, vocab):
@@ -205,14 +192,11 @@ class WhitespaceTokenizer:
     def __call__(self, text):
         non_empty_words = []
         # text.replace(" ","")
-        print(text)
         words = text.split(" ")
-        print(words)
         for s in words:
             if not s:
                 s = ' '
             non_empty_words.append(s)
-        print(non_empty_words)
         return Doc(self.vocab, words=non_empty_words)
 
 
