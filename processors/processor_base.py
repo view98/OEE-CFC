@@ -282,8 +282,8 @@ class DSET_processor:
                         if event_trigger['end'] < first_word_locs[i + 1] and event_trigger['start'] >= first_word_locs[i]:
                             min_s = first_word_locs[i]
                             max_e = first_word_locs[i + 1] - 1
-                            if max_e-min_s > 100:
-                                max_e = min_s+100
+                            if max_e-min_s > 200:
+                                max_e = min_s+250
                             cut_text = full_text[min_s:max_e]
                             offset = first_word_locs[i]
                             event_trigger['start'] -= offset
@@ -296,8 +296,8 @@ class DSET_processor:
                         if event_trigger['start'] >= first_word_locs[i] and event_trigger['end'] <= len(full_text)-1:
                             min_s = first_word_locs[i]
                             max_e = len(full_text)-1
-                            if max_e-min_s > 100:
-                                max_e = min_s+100
+                            if max_e-min_s > 200:
+                                max_e = min_s+250
                             cut_text = full_text[min_s:max_e]
                             offset = first_word_locs[i]
                             event_trigger['start'] -= offset
