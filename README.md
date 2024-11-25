@@ -1,5 +1,5 @@
 # OEE-CFC
-This is the OEE-CFC corpus of the paper [OEE-CFC: A Dataset for Open Event Extraction from Chinese Financial Commentary](https://aclanthology.org/2024.findings-emnlp.256/) 
+This is the OEE-CFC corpus of the paper [OEE-CFC: A Dataset for Open Event Extraction from Chinese Financial Commentary](https://aclanthology.org/2024.findings-emnlp.256/). 
 The experimental code is using the PAIE of the paper [Prompt for Extraction? PAIE: Prompting Argument Interaction for
 Event Argument Extraction]. ACL'2022.
 
